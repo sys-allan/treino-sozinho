@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Gruppo&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+:root {
+--header:#000000;
+--fundo-sub: #1b1b1b;
+--section:#dadbf1;
+--generico:#fff;
+--sigup:#4C5FD5;
+--section:#dadbf1;
+--fonte:'Courier New', Courier, monospace;
+} 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6rem;
+    background: var(--generico);
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    padding: 11px;
+    background: var(--header);
+    color: #fff;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+#fundo-sing,
+#fundo-sub,
+ul {
+display: flex;
+gap: 19px;
+list-style: none;
+text-decoration: none;
+color: var(--generico);
+}
+
+.submit,
+.sigup {
+    font-family: var(--fonte);
+}
+
+.submit {
+    padding: 5px 5px 5px;
+    border-radius: 7px;
+    border: 1px  solid var(--generico);
+    background: var(--fundo-sub);
+     transition: .5s;
+}
+
+.submit:hover {
+    transform: translateY(-5px);
+}
+
+
+.sigup {
+    padding: 5px 15px 5px 15px;
+    border-radius: 7px;
+    border: 1px  solid var(--generico);
+    background: var(--sigup);
+    transition: .5s;
+}
+
+.sigup:hover {
+transform: translateY(-5px);
+}
+
+.link {
+    text-decoration: none;
+    color:var(--sigup);
+}
+
+/* section */
+
+#conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--section);
+    padding: 3.5rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+h2 {
+    margin-bottom: 9px;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+input{
+font-size: 16px;
+padding: 4px 275px 6px 7px;
+transition: .5s;
+}
+
+input:hover {
+border: 2px solid var(--sigup);
+}
+
+.bnt {
+    background: transparent;
+    border: none;
+    position: relative;
+    right: 24px;
+    font-size: 16px;
+}
+
+/* grids */
+.grid-conteiner {
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(2,auto);
+    margin-left: 23%;
+    padding: 41px;
+}
+
+.estatistica,
+.ideias,
+.enigma,
+.equipe,
+.tutorial,
+.crescimento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 38px;
+}
+
+.tamanho-generico {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    bottom: 48px;
+}
+
+h4 {
+    margin-bottom: 4px;
+}
+
+/* footer */
+
+footer {
+    background: var(--header);
+    padding: 1%;
+}
+
+.card {
+    color: #dadbf1;
+}
