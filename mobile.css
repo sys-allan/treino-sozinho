@@ -1,0 +1,96 @@
+@media screen and (max-width: 767px) {
+    li {
+        height: 36px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .bnt {
+        display: none;
+    }
+
+    .grid-conteiner {
+        position: relative;
+        right: 25px;
+    }
+
+    .tutorial {
+        position: relative;
+        left: 15px;
+    }
+
+    footer {
+        padding: 36px 24px 28px;
+    }
+
+    .final-conteiner {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 24px;
+        row-gap: 30px;
+        align-items: start;
+    }
+
+    .card-abstract {
+        grid-column: 1 / -1;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #454545;
+    }
+
+    .card-abstract,
+    .card-resources,
+    .card-community,
+    .card-company,
+    .contato {
+        position: static;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .card-resources,
+    .card-community,
+    .card-company {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-top: 12px;
+    }
+
+    .card-abstract h4,
+    .card-resources h4,
+    .card-community h4,
+    .card-company h4,
+    .contato span {
+        margin-bottom: 5px;
+    }
+
+    .card-abstract p,
+    .contato p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    footer {
+        padding: 28px 18px;
+    }
+
+    .final-conteiner {
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+    }
+
+    .card-abstract {
+        grid-column: 1;
+    }
+}

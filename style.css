@@ -112,7 +112,7 @@ h2 {
 
 input{
 font-size: 16px;
-padding: 4px 275px 6px 7px;
+padding: 4px 157px  6px 7px;
 transition: .5s;
 }
 
@@ -131,11 +131,12 @@ border: 2px solid var(--sigup);
 /* grids */
 .grid-conteiner {
     display: grid;
-    grid-template-columns: repeat(2,300px);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,auto);
-    margin-left: 23%;
+    margin-left: 0%;
     padding: 41px;
 }
+
 
 .estatistica,
 .ideias,
@@ -146,7 +147,7 @@ border: 2px solid var(--sigup);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 13px;
+    gap: 12px;
     margin-bottom: 38px;
 }
 
@@ -165,9 +166,64 @@ h4 {
 
 footer {
     background: var(--header);
-    padding: 1%;
+    padding: 48px clamp(24px, 6vw, 96px);
 }
 
-.card {
-    color: #dadbf1;
+.final-conteiner {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 32px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.card-abstract,
+.card-community,
+.card-company,
+.card-resources,
+.contato {
+color: var(--generico);
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card-abstract {
+    grid-column: span 2;
+}
+
+.card-resources {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card-community {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card-company {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contato {
+    margin-top: 14px;
+}
+
+.card-abstract h4,
+.card-resources h4,
+.card-community h4,
+.card-company h4,
+.contato span {
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.card-abstract p,
+.contato p {
+    overflow-wrap: anywhere;
+}
+
